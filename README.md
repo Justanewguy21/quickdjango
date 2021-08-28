@@ -11,14 +11,16 @@ Create a Virutal Environment /venv for a movieapp
 - create a django project with a new quickdjang
 
 ```bash
-#comand to created Virtual environment
+#comand to create Virtual environment
 python -m venv venv_quickdjango
-#activate a create Virtual environment
+#activate a created Virtual environment
 venv_quickdjango\Scripts\activate
 #Install django 3.1.3
 pip install django==3.1.3
 #Check the libraries
 pip freeze
+#Create a djang project
+django-admin startproject quickdjango
 ```
 
 

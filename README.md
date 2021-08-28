@@ -6,13 +6,19 @@ Learn to build an online movie website by using django web framework.
 
 ## GetStarted
 
-Create a Virutal Environment /venv for a moiveapp
+Create a Virutal Environment /venv for a movieapp
 - understand what is a venv, how to setup it
 - create a django project with a new quickdjang
 
-```bas
-#comand to create Virtual environment
-python3 -m venv quickdjango
+```bash
+#comand to created Virtual environment
+python -m venv venv_quickdjango
+#activate a create Virtual environment
+venv_quickdjango\Scripts\activate
+#Install django 3.1.3
+pip install django==3.1.3
+#Check the libraries
+pip freeze
 ```
 
 

@@ -21,6 +21,11 @@ pip install django==3.1.3
 pip freeze
 #Create a djang project
 django-admin startproject quickdjango
+#create a movieapp
+python manage.py startapp movieapp
+#run the webserver
+python manage.py runserver
+#run http://127.0.0.1:8000/
 ```
 
 

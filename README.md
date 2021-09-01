@@ -21,11 +21,29 @@ pip install django==3.1.3
 pip freeze
 #Create a djang project
 django-admin startproject quickdjango
+#add the movieapp in the setting of the quickdjango
+
 #create a movieapp
 python manage.py startapp movieapp
+INSTALLED_APPS = [
+    '...',
+    'movieapp'
+]
 #run the webserver
 python manage.py runserver
 #run http://127.0.0.1:8000/
+```
+## Create a movie app home page
+```python
+#Add a home function in a views.py
+def home(request):
+  return render(request, 'home.html', {})
+#Add urls in the quickdjango
+from [django app] import views
+urlpatterns = [
+    path('', views.home, name='home')
+]
+#Add a home.html in templates folder of movieapp
 ```
 
 

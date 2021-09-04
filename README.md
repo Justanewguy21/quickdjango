@@ -45,7 +45,15 @@ urlpatterns = [
 ]
 #Add a home.html in templates folder of movieapp
 ```
-
+##Django Dashboard
+```python
+#command to intialize the Django dashboard
+python manage.py migrate 
+#Create a supper user
+python manage.py createsuperuser (Ben21/pASSWRD)
+#pythonmanage run server
+http://127.0.0.1:8080/admin
+```
 
 ## Contributing
 By ThanhTao, email at taothanh2020@gmail.com

@@ -4,3 +4,7 @@ from django.shortcuts import render
 # this is the home page of movieapp
 def home(request):
     return render(request, 'home.html', {})
+# testimonials
+def testimonials(request):
+    return render(request, 'testimonials.html', {})
+    

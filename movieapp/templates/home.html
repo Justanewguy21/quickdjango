@@ -6,4 +6,11 @@
 
 {% block content %}
   <h1>List</h1>
+  {% for m in movies %}
+    <h3>Name {{ m.name }}</h3> 
+    <br/>
+    <p>{{ m.description }}</p>
+     <small>m.year</small>
+    
+  {% endfor %}
 {% endblock %}

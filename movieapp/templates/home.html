@@ -5,12 +5,37 @@
 {% endblock %}
 
 {% block content %}
-  <h1>List</h1>
-  {% for m in movies %}
-    <h3>Name {{ m.name }}</h3> 
-    <br/>
-    <p>{{ m.description }}</p>
-     <small>m.year</small>
+  <h1 class="text-center">List</h1>
+
+  <div class="mt-5 container">
+    <div class="row">
+    {% for m in movies %}
+
+      <div class="col-sm-6">
+        
+        <div class="card">
+          <img src="https://img.youtube.com/vi/{{ m.trailer }}/maxresdefault.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{ m.name }}</h5>
+            <p class="card-text">{{ m.description }}</p>
+            <p class="card-text">{{ m.year }}</p>
+            <p class="card-text">{{ m.rating }}</p>
+            <a href="{% url 'movietrailer' m.id %}" class="btn btn-primary"> Trailer </a>
+          </div>
+        </div>
+
+      </div>
     
-  {% endfor %}
+
+
+
+     
+      
+    {% endfor %}
+  </div>
+    
+  </div>
+
+
+ 
 {% endblock %}

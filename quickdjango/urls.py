@@ -19,5 +19,6 @@ from movieapp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
-    path('khangianoivechungtoi', views.testimonials, name = 'testimonials')
+    path('khangianoivechungtoi', views.testimonials, name = 'testimonials'),
+    path('movie/trailer/<int:movieid>', views.movie, name = 'movietrailer')
 ]

@@ -22,4 +22,9 @@ def home(request):
 # testimonials
 def testimonials(request):
     return render(request, 'testimonials.html', {})
+def movie(request, movieid):
+    movie_record = Movie.objects.get(id = movieid)
+
+    return render(request, 'movie.html', {'movie': movie_record})
+
     
